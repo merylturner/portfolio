@@ -1,11 +1,13 @@
 /*      Add hamburger icon */
 @font-face {
     font-family: 'icomoon';
-		src: url('fonts/menu.svg') format('svg');
+		src: url('fonts/icomoon.svg') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
 
 .icon-menu:before {
-  content: "\1f306";
+  content: "\e9be";
 }
+
+/*      TRY ADDING FILES FROM THE LAB */
