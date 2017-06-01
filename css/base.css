@@ -1,5 +1,95 @@
-/*     base styles    */
+body {
+        margin: 0;
+        float: none;
+        width: auto;
+        height: 100%;
+}
 
-body html {
+html {
+    margin: 0;
+}
 
+main {
+    padding: 2%;
+    text-align: center;
+}
+li {
+    list-style-type: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+hr {
+        border-top: 1px solid lightgrey;
+        width: 60%;
+}
+
+/*VIEWPORT SETTINGS
+=======================================*/
+@viewport {
+    width: device-width;
+    zoom: 1;
+}
+
+/*LINKS
+=======================================*/
+a, a:link {
+        text-decoration: none;
+        color: white;
+}
+a:hover {
+    color: #009D91;
+}
+
+
+
+/*HEADER
+=======================================*/
+header {
+    width: 100%;
+    display: inline-block;
+    padding: 20px;
+    background-color: #BFBEBD;
+    color: white;
+}
+header section {
+    float:left;
+}
+h1 {
+    color:white;
+    font-family: 'Oswald', sans-serif;
+    flex-grow: 8;
+}
+
+
+
+/*FORM
+=======================================*/
+form {
+    width: 50%;
+}
+
+legend {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2em;
+}
+fieldset {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+/*FOOTER
+=======================================*/
+footer {
+    background-color: #BFBEBD;
+    color: white;
+    width: 100%;
+    margin: 0;
+    position: absolute;
 }

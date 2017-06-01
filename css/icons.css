@@ -1,11 +1,11 @@
-/*      STRETCH GOAL TO ADD ICONS */
+/*      Add hamburger icon */
 @font-face {
     font-family: 'icomoon';
-    src: url('');
-    font-weight: normal;
-    font-style: normal;
+		src: url('fonts/menu.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
 
 .icon-menu:before {
-  content: "\e9bd";
+  content: "\1f306";
 }
