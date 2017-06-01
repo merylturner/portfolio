@@ -1,5 +1,19 @@
 /*     base styles    */
 
 body html {
+    margin: 0;
+}
+/*     media queries   */
+
+@media screen and (min-width: 400px) {
+
+}
+@media screen and (min-width: 600px) {
+
+}
+@media screen and (min-width: 1000px) {
+
+}
+@media screen and (min-width: 1400px) {
 
 }

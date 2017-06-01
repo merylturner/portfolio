@@ -1,15 +1,35 @@
 /*     main, header, footer     */
 
-/*     TODO: MEDIA QUERIES FOR MOBILE FIRST    */
 
-header {
+/*     media queries   */
+@viewport {
+    width: device-width;
+    zoom: 1;
+}
+@media screen and (min-width: 400px) {
+
+    header {
+        width: 100%;
+        background-color: red;
+    }
+
+    main {
+
+    }
+
+    footer {
+
+    }
+}
+
+@media screen and (min-width: 600px) {
 
 }
 
-main {
+@media screen and (min-width: 1000px) {
 
 }
 
-footer {
+@media screen and (min-width: 1400px) {
 
 }
