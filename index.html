@@ -25,16 +25,16 @@
             <div class="icon-menu"></div>
                 <ul>
                     <li class="tab" data-content="home"><a href="#" class="icon-home">Home</a></li>
-                    <li class="tab" data-content="about"><a href="#about-me" class="icon-">About</a></li>
+                    <li class="tab" data-content="about-me"><a href="#about-me" class="icon-">About</a></li>
                     <li class="tab" data-content="projects"><a href="#projects" class="icon-">Projects</a></li>
-                    <li class="tab" data-content="contact"><a href="#contact-me" class="icon-">Contact</a></li>
+                    <li class="tab" data-content="contact-me"><a href="#contact-me" class="icon-">Contact</a></li>
                 </ul>
         </nav>
     </header>
     <br/>
     <br/>
-    <main>
-        <section id="about-me">
+    <main id="home">
+        <section id="about-me" class="tab-content">
             <div>
                 <img src="imgs/profile-pic.jpg" width="400" height="300">
                 <h4>ABOUT ME</h4>
@@ -42,9 +42,9 @@
 
             </div>
         </section>
-        <hr/>
+        <hr id="main-hr"/>
         <!--    TODO: Fill in project div elements: img, h2,h4,p    -->
-        <section id="projects">
+        <section id="projects" class="tab-content">
             <article class="template">
                 <img src="imgs/" width="600" height="400">
                 <h2>Title</h2>
@@ -54,7 +54,7 @@
             </article>
         </section>
         <!--    TODO: Add contact form at bottom of page (input text fields) -->
-        <form id="contact-me">
+        <form id="contact-me" class="tab-content">
             <legend>Contact Me </legend>
             <fieldset>
                 <!--<label for="name">Name</label>-->
