@@ -12,6 +12,7 @@ html {
 main {
     padding: 2%;
     text-align: center;
+    margin: 10%;
 }
 li {
     list-style-type: none;
@@ -35,7 +36,7 @@ hr {
 
 /*LINKS
 =======================================*/
-a, a:link {
+nav a, nav a:link {
         text-decoration: none;
         color: white;
 }
