@@ -10,8 +10,8 @@
     <link href="css/skeleton.css" type="text/css" rel="stylesheet" />
     <link href="css/base.css" type="text/css" rel="stylesheet" />
     <link href="css/icons.css" type="text/css" rel="stylesheet" />
-    <link href="css/layout.css" type="text/css" rel="stylesheet" />
     <link href="css/modules.css" type="text/css" rel="stylesheet" />
+    <link href="css/layout.css" type="text/css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Anton|Barrio|Bubbler+One|Inconsolata|Montserrat+Subrayada|Open+Sans+Condensed:300|Oswald" rel="stylesheet">
     <title>Made By Meryl</title>
 </head>
@@ -24,37 +24,39 @@
         <nav class="main-nav">
             <div class="icon-menu"></div>
                 <ul>
-                    <li class="tab" data-content=""><a href="#" class="icon-home">Home</a></li>
-                    <li class="tab" data-content=""><a href="#about-me" class="icon-">About</a></li>
-                    <li class="tab" data-content=""><a href="#projects" class="icon-">Projects</a></li>
-                    <li class="tab" data-content=""><a href="#contact-me" class="icon-">Contact</a></li>
+                    <li class="tab" data-content="home"><a href="#" class="icon-home">Home</a></li>
+                    <li class="tab" data-content="about-me"><a href="#about-me" class="icon-">About</a></li>
+                    <li class="tab" data-content="projects"><a href="#projects" class="icon-">Projects</a></li>
+                    <li class="tab" data-content="contact-me"><a href="#contact-me" class="icon-">Contact</a></li>
                 </ul>
         </nav>
     </header>
     <br/>
     <br/>
-    <main>
-        <section id="about-me">
+    <main id="home">
+        <section id="about-me" class="tab-content">
             <div>
                 <img src="imgs/profile-pic.jpg" width="400" height="300">
                 <h4>ABOUT ME</h4>
                 <p>Fam lo-fi tattooed, try-hard narwhal fashion axe kale chips four loko biodiesel wolf pabst. Dreamcatcher fam flannel pabst farm-to-table PBR&B. Vegan enamel pin live-edge mustache, DIY shabby chic before they sold out PBR&B sustainable kombucha. Fanny pack la croix letterpress glossier, pork belly meggings cred paleo. </p>
+        <!--    TODO: add icons (web developer, graphic designer, beer conneseur blah blah, actually fill in About Me info, add resume details    -->
 
             </div>
         </section>
-        <hr/>
-        <!--    TODO: Fill in project div elements: img, h2,h4,p    -->
-        <section id="projects">
+        <hr id="main-hr"/>
+        <section id="projects" class="tab-content">
             <article class="template">
                 <img src="imgs/" width="600" height="400">
                 <h2>Title</h2>
                 <h4>Date Created</h4>
-                <p>Project Description goes here</p>
+                <p class="project-body">Project Description goes here</p>
+                <a href ="#" class="read-on">Read on &rarr; </a>
+                <a href ="#" class="show-less hidden">Show less &larr; </a>
             <hr>
             </article>
         </section>
         <!--    TODO: Add contact form at bottom of page (input text fields) -->
-        <form id="contact-me">
+        <form id="contact-me" class="tab-content">
             <legend>Contact Me </legend>
             <fieldset>
                 <!--<label for="name">Name</label>-->
@@ -79,6 +81,7 @@
         crossorigin="anonymous"></script>
     <script src="js/projects.js" type="text/javascript"></script>
     <script src="js/app.js" type="text/javascript"></script>
+    <script src="js/projectView.js" type="text/javascript"></script>
 </body>
 
 </html>

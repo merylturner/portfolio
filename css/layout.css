@@ -1,0 +1,14 @@
+/*LINKS
+=======================================*/
+.read-on,.show-less {
+        text-decoration: none;
+        color: black;
+}
+
+.read-on:hover, .show-less:hover{
+    color: #009D91;
+}
+
+.hidden {
+    display: none;
+}

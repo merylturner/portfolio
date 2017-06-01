@@ -21,8 +21,8 @@ Project.prototype.toHtml = function () {
     $newProject.find('h2').html(this.name);
     $newProject.find('h4').html(this.date);
     $newProject.find('p').html(this.description);
+    
     return $newProject;
-
 };
 
 //push each new project to the allProjects array
@@ -33,9 +33,7 @@ projectData.forEach(function (projectDataObj) {
 //projectData.forEach - append items to the DOM via toHtml
 allProjects.forEach(function (project) {
     $('#projects').append(project.toHtml());
-
 });
-
 //hide template article
 $('.template').hide();
 
