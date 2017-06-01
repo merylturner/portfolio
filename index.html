@@ -19,18 +19,18 @@
 
 <body>
     <header>
-        <h1>MADE BY MERYL</h1>
+        <section><h1>MADE BY MERYL</h1>
+        <p>Web Developer + Graphic Designer </p>
+        </section>
         <nav class="main-nav">
-            <div class="icon-menu">
+            <div class="icon-menu"></div>
                 <ul>
                     <li class="tab" data-content=""><a href="#" class="icon-home">Home</a></li>
-                    <li class="tab" data-content=""><a href="#" class="icon-">About</a></li>
-                    <li class="tab" data-content=""><a href="#" class="icon-">Projects</a></li>
-                    <li class="tab" data-content=""><a href="#" class="icon-">Contact</a></li>
+                    <li class="tab" data-content=""><a href="#about-me" class="icon-">About</a></li>
+                    <li class="tab" data-content=""><a href="#projects" class="icon-">Projects</a></li>
+                    <li class="tab" data-content=""><a href="#contact-me" class="icon-">Contact</a></li>
                 </ul>
-            </div>
         </nav>
-        <!--    TODO: <span class="icon-menu"></span> for each icon , START with menu icon  -->
     </header>
     <br/>
     <br/>
@@ -56,17 +56,17 @@
             </article>
         </section>
         <!--    TODO: Add contact form at bottom of page (input text fields) -->
-        <form>
+        <form id="contact-me">
             <legend>Contact Me </legend>
             <fieldset>
-                <label for="name">Name</label>
-                <input type="text" id="name" name="user_name"></input>
-                <label for="email">Email</label>
-                <input type="text" id="email" name="user_mail"></input>
-                <label for="phone">Phone</label>
-                <input type="text" id="phone" name="user_phone"></input>
-                <label for="msg">Message</label>
-                <textarea type="text" id="msg" name="user_message"></textarea>
+                <!--<label for="name">Name</label>-->
+                <input type="text" id="name" name="user_name" placeholder="Name"></input>
+                <!--<label for="email">Email</label>-->
+                <input type="text" id="email" name="user_mail" placeholder="Email"></input>
+                <!--<label for="phone">Phone</label>-->
+                <input type="text" id="phone" name="user_phone" placeholder="Phone"></input>
+                <!--<label for="msg">Message</label>-->
+                <textarea type="text" id="msg" name="user_message" placeholder="Message"></textarea>
                 <button><a>Submit</a></button>
             </fieldset>
         </form>
