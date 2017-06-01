@@ -1,19 +1,17 @@
-/*     base styles    */
-
-body html {
-    margin: 0;
-}
-/*     media queries   */
-
+/*     base styles Mobile    */
 @media screen and (min-width: 400px) {
 
-}
-@media screen and (min-width: 600px) {
+    body {
+        margin: 0;
+        text-align: center;
+        float: none;
+        width: auto;
+    }
+
 
 }
+
+/*     base styles Desktop    */
 @media screen and (min-width: 1000px) {
-
-}
-@media screen and (min-width: 1400px) {
 
 }
