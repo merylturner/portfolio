@@ -27,11 +27,6 @@ hr {
         width: 80%;
 }
 
-/*VIEWPORT SETTINGS
-=======================================*/
-@viewport {
-  width: device-width;
-}
 
 /*FONTS
 =======================================*/
@@ -97,47 +92,8 @@ h1 {
 }
 header p {
     font-family: 'Montserrat', sans-serif;
-
 }
 
-
-
-/*FORM
-=======================================*/
-form {
-    width: 500px;
-    margin: 0 auto;
-}
-
-legend {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2em;
-    color:black;
-    background-color: transparent;
-    margin: 5% auto;
-}
-
-fieldset {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    border: none;
-    margin: 0 auto;
-    text-align: center;
-    width: 80%;
-    /*padding: 20%;*/
-}
-
-input, textarea {
-    display: block;
-    width: 400px;
-    margin: 5% auto;
-}
-form button {
-    margin: 0 auto;
-    margin-bottom: 20px;
-}
 
 
 /*FOOTER
@@ -151,15 +107,4 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-}
-footer p {
-    order: 1;
-    padding-left: 1%;
-}
-footer #social-media {
-    order: 2;
-    padding-right: 1%;
-}
-footer span {
-    margin: 0 5px;
 }
