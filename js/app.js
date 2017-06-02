@@ -34,4 +34,3 @@ allProjects.forEach(function (project) {
 
 
 $('.template').hide();
-
