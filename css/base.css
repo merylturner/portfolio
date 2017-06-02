@@ -12,7 +12,7 @@ html {
 main {
     padding: 2%;
     text-align: center;
-    margin: 10%;
+    margin: 0 10%;
 }
 li {
     list-style-type: none;
@@ -24,7 +24,7 @@ img {
 
 hr {
         border-top: 1px solid #eee;
-        width: 60%;
+        width: 80%;
 }
 
 /*VIEWPORT SETTINGS
@@ -36,30 +36,30 @@ hr {
 /*FONTS
 =======================================*/
 * {
-    font-family: 'Raleway', Helvetica, sans-serif;
+    font-family: 'Montserrat', Helvetica, sans-serif;
 }
 
 /*LINKS
 =======================================*/
 nav a, nav a:link {
         text-decoration: none;
-        color: white;
+        color: black;
 }
 nav a:hover {
-    color: #BFBEBD;
+    color: #1EAEDB;
 }
 
 /*BUTTONS
 =======================================*/
 button {
-    background-color: #2a3a3f;
+    background-color: black;
 }
 button a {
     color:white;
 }
     
 button:hover {
-    background-color: #263439;
+    background-color: #1EAEDB;
     color:white;
 }
 
@@ -74,22 +74,26 @@ button a:hover {
 /*     make header take up full width and display photo with logo?*/
 header {
     width: 100%;
-    /*height: 500px;*/
     display: inline-block;
     padding: 20px;
+    /*background-color: #2a3a3f;*/
+    /*border-bottom: 5px solid #eee;*/
+    color: black;
     /*background-image: url("../imgs/profile-pic.jpg");
     background-repeat: no-repeat;
     background-size: 800px;*/
-    background-color: #2a3a3f;
-    color: white;
+    /*height: 500px;*/
 }
 header section {
     float:left;
 }
 h1 {
-    color:white;
-    font-family: 'Oswald', sans-serif;
-    flex-grow: 8;
+    color:black;
+    font-family: 'Montserrat', sans-serif;
+}
+header p {
+    font-family: 'Montserrat', sans-serif;
+
 }
 
 
@@ -102,11 +106,13 @@ form {
 }
 
 legend {
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 2em;
+    color:black;
     background-color: transparent;
     margin: 0 auto;
 }
+
 fieldset {
     display: flex;
     flex-direction: row;
@@ -116,17 +122,40 @@ fieldset {
     margin: 0 auto;
     padding: 0 20%;
     text-align: center;
+    width: fit-content;
+}
 
+input, textarea {
+    display: block;
+    width: 400px;
+    margin: 5% auto;
+}
+form button {
+    margin: 0 auto;
+    margin-bottom: 20px;
 }
 
 
 /*FOOTER
 =======================================*/
 footer {
-    background-color: #2a3a3f;
-    color: white;
+    color: black;
     width: 100%;
-    margin: 0;
+    /*margin: 0;*/
     position: absolute;
     text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+footer p {
+    order: 1;
+    padding-left: 1%;
+}
+footer #social-media {
+    order: 2;
+    padding-right: 1%;
+}
+footer span {
+    margin: 0 5px;
 }
