@@ -30,8 +30,13 @@ hr {
 /*VIEWPORT SETTINGS
 =======================================*/
 @viewport {
-    width: device-width;
-    zoom: 1;
+  width: device-width;
+}
+
+/*FONTS
+=======================================*/
+* {
+    font-family: 'Raleway', Helvetica, sans-serif;
 }
 
 /*LINKS
@@ -41,7 +46,7 @@ nav a, nav a:link {
         color: white;
 }
 nav a:hover {
-    color: #fdcd3b;
+    color: #BFBEBD;
 }
 
 /*BUTTONS
@@ -65,10 +70,16 @@ button a:hover {
 
 /*HEADER
 =======================================*/
+
+/*     make header take up full width and display photo with logo?*/
 header {
     width: 100%;
+    /*height: 500px;*/
     display: inline-block;
     padding: 20px;
+    /*background-image: url("../imgs/profile-pic.jpg");
+    background-repeat: no-repeat;
+    background-size: 800px;*/
     background-color: #2a3a3f;
     color: white;
 }

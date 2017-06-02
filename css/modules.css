@@ -10,12 +10,17 @@
     float: right;
     padding-right: 20px;
 }
-.icon-menu {
-    font-size: 2em;
+.icon-menu3 {
+    font-size: 4em;
+}
+a.icon-{
+    font-family: Arial, Helvetica, sans-serif;
 }
 
+
+
 @media screen and (min-width: 600px){
-    .icon-menu {
+    .icon-menu3 {
         display: none;
     }
     .main-nav li {
@@ -25,5 +30,24 @@
     .main-nav ul {
     display: block;
     padding-right: 0;
+    }
+}
+
+
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 600px) {
+    #nav-list {
+        display: none;
+        padding: 0;
+        list-style: none;
+        clear: both;
+    }
+    #nav-list:hover {
+        display: block;
+    }
+    
+    .icon-menu3 {
+        display: block;
+        float: right;
     }
 }
