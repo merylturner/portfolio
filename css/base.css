@@ -102,8 +102,8 @@ fieldset {
     flex-wrap: wrap;
     justify-content: space-around;
     border: none;
-    /*margin: 0 auto;
-    padding: 0 20%;*/
+    margin: 0 auto;
+    padding: 0 20%;
     text-align: center;
 
 }
@@ -112,9 +112,10 @@ fieldset {
 /*FOOTER
 =======================================*/
 footer {
-    background-color: #BFBEBD;
+    background-color: #2a3a3f;
     color: white;
     width: 100%;
     margin: 0;
     position: absolute;
+    text-align: center;
 }
