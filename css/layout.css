@@ -1,3 +1,6 @@
+.hidden {
+    display: none;
+}
 /*LINKS
 =======================================*/
 .read-on,.show-less {
@@ -9,6 +12,23 @@
     color: #009D91;
 }
 
-.hidden {
-    display: none;
+
+/*FORM
+=======================================*/
+#contact-form {
+    background-color: #eee;
+    width: 100%;
+}
+
+#name {
+    order:1;
+}
+#email {
+    order:2;
+}
+#phone {
+    order:3;
+}
+#msg {
+    order:4;
 }
