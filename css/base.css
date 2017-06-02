@@ -23,7 +23,7 @@ img {
 }
 
 hr {
-        border-top: 1px solid lightgrey;
+        border-top: 1px solid #eee;
         width: 60%;
 }
 
@@ -40,10 +40,27 @@ nav a, nav a:link {
         text-decoration: none;
         color: white;
 }
-a:hover {
-    color: #009D91;
+nav a:hover {
+    color: #fdcd3b;
 }
 
+/*BUTTONS
+=======================================*/
+button {
+    background-color: #2a3a3f;
+}
+button a {
+    color:white;
+}
+    
+button:hover {
+    background-color: #263439;
+    color:white;
+}
+
+button a:hover {
+    color: white;
+}
 
 
 /*HEADER
@@ -52,7 +69,7 @@ header {
     width: 100%;
     display: inline-block;
     padding: 20px;
-    background-color: #BFBEBD;
+    background-color: #2a3a3f;
     color: white;
 }
 header section {
@@ -69,21 +86,28 @@ h1 {
 /*FORM
 =======================================*/
 form {
-    width: 50%;
+    width: auto;
+    margin: 0 auto;
 }
 
 legend {
     font-family: 'Oswald', sans-serif;
     font-size: 2em;
+    background-color: transparent;
+    margin: 0 auto;
 }
 fieldset {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
     flex-wrap: wrap;
     justify-content: space-around;
+    border: none;
+    /*margin: 0 auto;
+    padding: 0 20%;*/
+    text-align: center;
 
 }
+
 
 /*FOOTER
 =======================================*/
