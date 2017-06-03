@@ -39,10 +39,10 @@ hr {
 =======================================*/
 nav a, nav a:link {
         text-decoration: none;
-        color: black;
+        color:white;
 }
 nav a:hover {
-    color: #1EAEDB;
+    color: black;
 }
 
 /*BUTTONS
@@ -70,21 +70,28 @@ button a:hover {
 /*     make header take up full width and display photo with logo?*/
 header {
     width: 100%;
-    display: inline-block;
+    /*display: inline-block;*/
     padding: 20px;
-    
-    /*background-color: #2a3a3f;*/
+    height:100vh;
+    display:table;
+    background-color: #1EAEDB;
     /*border-bottom: 5px solid #eee;*/
-    /*background-image: url("../imgs/profile-pic.jpg");
+    /*/*background-image: url("../imgs/profile-pic.jpg");
     background-repeat: no-repeat;
     background-size: 800px;*/
     /*height: 500px;*/
 }
 header section {
-    float:left;
+    /*display:table;*/
+    width:100%;
+    text-align: center;
+    /*height: 100vh;*/
+    vertical-align: middle;
+    clear:both;
 }
+
 h1 {
-    color:black;
+    color:white;
     font-family: 'Montserrat Extra-bold 800', sans-serif;
     font-weight: 800;
     font-size: 40px;
@@ -92,6 +99,7 @@ h1 {
 }
 header p {
     font-family: 'Montserrat', sans-serif;
+    color:white;
 }
 
 
