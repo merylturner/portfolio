@@ -16,6 +16,8 @@ main {
 }
 li {
     list-style-type: none;
+    font-size: .8em;
+    color:black;
 }
 
 img {
@@ -23,30 +25,97 @@ img {
 }
 
 hr {
-        border-top: 1px solid #eee;
-        width: 80%;
+    border-top: 1px solid #eee;
+    width: 80%;
+}
+nav a {
+    font-family: 'Montserrat', Helvetica, sans-serif;
+    font-size: 1.2em;
 }
 
-/*VIEWPORT SETTINGS
-=======================================*/
-@viewport {
-  width: device-width;
-}
 
 /*FONTS
 =======================================*/
 * {
     font-family: 'Montserrat', Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+}
+
+
+
+/*HEADER
+=======================================*/
+
+/*     make header take up full width and display photo with logo?*/
+header {
+    width: 100%;
+    padding: 20px;
+    height:100vh;
+    display:table;
+    background-color: black;
+    /*display: inline-block;*/
+    /*border-bottom: 5px solid #eee;*/
+    /*/*background-image: url("../imgs/profile-pic.jpg");
+    background-repeat: no-repeat;
+    background-size: 800px;*/
+    /*height: 500px;*/
+}
+header section {
+    width:100%;
+    text-align: center;
+    vertical-align: middle;
+    /*clear:both;*/
+    position: relative;
+    display: table-cell;
+}
+
+header div {
+    height: 15%;
+    text-align: center;
+    color:white;
+    vertical-align: bottom;
+    display: table-row;
+    position: relative;
+    font-size: .8em;
+    line-height: .5em;
+}
+
+nav {
+    display:inline;
+    color:black;
+    margin: 0 auto;
+    padding: 1em 2em;
+}
+
+h1 {
+    color:white;
+    font-family: 'Syncopate', sans-serif;
+    font-weight: 800;
+    font-size: 5rem;
+    margin-bottom: 2%;
+    text-transform: uppercase;
+    line-height: .5em;
+}
+header p {
+    font-family: 'Syncopate', sans-serif;
+    color:white;
+    letter-spacing: .5em;
+    text-transform: uppercase;
 }
 
 /*LINKS
 =======================================*/
 nav a, nav a:link {
         text-decoration: none;
-        color: black;
+        /*color:white;*/
 }
 nav a:hover {
-    color: #1EAEDB;
+    color: #1EAEDB;;
+}
+a {
+    text-decoration: none;
+
 }
 
 /*BUTTONS
@@ -68,74 +137,6 @@ button a:hover {
 }
 
 
-/*HEADER
-=======================================*/
-
-/*     make header take up full width and display photo with logo?*/
-header {
-    width: 100%;
-    display: inline-block;
-    padding: 20px;
-    /*background-color: #2a3a3f;*/
-    /*border-bottom: 5px solid #eee;*/
-    color: black;
-    /*background-image: url("../imgs/profile-pic.jpg");
-    background-repeat: no-repeat;
-    background-size: 800px;*/
-    /*height: 500px;*/
-}
-header section {
-    float:left;
-}
-h1 {
-    color:black;
-    font-family: 'Montserrat', sans-serif;
-}
-header p {
-    font-family: 'Montserrat', sans-serif;
-
-}
-
-
-
-/*FORM
-=======================================*/
-form {
-    width: auto;
-    margin: 0 auto;
-}
-
-legend {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2em;
-    color:black;
-    background-color: transparent;
-    margin: 0 auto;
-}
-
-fieldset {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    border: none;
-    margin: 0 auto;
-    padding: 0 20%;
-    text-align: center;
-    width: fit-content;
-}
-
-input, textarea {
-    display: block;
-    width: 400px;
-    margin: 5% auto;
-}
-form button {
-    margin: 0 auto;
-    margin-bottom: 20px;
-}
-
-
 /*FOOTER
 =======================================*/
 footer {
@@ -149,13 +150,5 @@ footer {
     justify-content: space-between;
 }
 footer p {
-    order: 1;
-    padding-left: 1%;
-}
-footer #social-media {
-    order: 2;
-    padding-right: 1%;
-}
-footer span {
-    margin: 0 5px;
+    display: inline;
 }

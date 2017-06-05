@@ -22,11 +22,13 @@ projectView.handleMainNav = function () {
 
 projectView.setTeasers = function () {
     $('.project-body *:nth-of-type(n+2)').hide();
+    console.log($('.project-body'));
 
     $('.read-on').on('click', function () {
         event.preventDefault();
         $(this).toggleClass('hidden');
         $(this).parent().find($('.show-less')).toggleClass('hidden');
+        console.log('clicked');
         $(this).parent().find($('.project-body *:nth-of-type(n+2)')).fadeIn(750);
     });
 

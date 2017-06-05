@@ -1,53 +1,120 @@
-.main-nav ul {
+/*.main-nav ul {
     display: none;
     list-style: none;
     clear: both;
-}
-.main-nav:hover ul {
-    display: inline;
-}
-.main-nav {
-    float: right;
-    padding-right: 20px;
-}
-.icon-menu3 {
-    font-size: 3em;
-}
-a.icon-{
-    font-family: Arial, Helvetica, sans-serif;
-}
+}*/
 
 
+.icon-circle-down {
+    color: white;
+}
 
+/*.scroll {
+    transform: translate(200px, 0);
+}*/
+/*FORM
+=======================================*/
+form {
+    width: 500px;
+    margin: 0 auto;
+}
+
+legend {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
+    color:black;
+    background-color: transparent;
+    margin: 5% auto;
+}
+
+fieldset {
+    border: none;
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+}
+
+input, textarea {
+    display: block;
+    width: 400px;
+    margin: 5% auto;
+}
+form button {
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+#contact-form {
+    background-color: #eee;
+    margin: 0 auto;
+    width: fit-content;
+    border-radius: 2%;
+}
+
+#name {
+    order:1;
+}
+#email {
+    order:2;
+}
+#phone {
+    order:3;
+}
+#msg {
+    order:4;
+}
+
+/*DESKTOP
+=======================================*/
 @media screen and (min-width: 600px){
-    .icon-menu3 {
-        display: none;
+    .main-nav ul {
+        display:none;
     }
-    .main-nav li {
+    .main-nav:hover ul {
+        display:inline-block;
+    }
+    /*.icon-menu3 {
+        display: none;
+        font-size: 3em;
+    }*/
+    /*.main-nav li {
         display: inline-block;
-        padding: 20px 20px;
+        padding: 10px 20px;
     }
     .main-nav ul {
     display: block;
     padding-right: 0;
-    }
+    }*/
 }
 
 
+/*MOBILE
+=======================================*/
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 600px) {
-    #nav-list {
+    .main-nav ul {
+        display:none;
+    }
+    .main-nav:hover ul {
+        display:inline-block;
+    }
+    
+    /*.icon-menu {
+        display: block;
+    }
+    .main-nav ul {
         display: none;
         padding: 0;
         list-style: none;
         clear: both;
     }
-    #nav-list:hover {
+    .main-nav:hover ul {
         display: block;
-    }
+    }*/
 
-    .icon-menu3 {
-        display: block;
-        float: right;
-    }
+
 }

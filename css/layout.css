@@ -2,6 +2,10 @@
     display: none;
 }
 
+.main-nav {
+    margin: 0 auto;
+}
+
 /*LINKS
 =======================================*/
 .read-on,.show-less {
@@ -13,25 +17,45 @@
     color: #1EAEDB;
 }
 
-
-/*FORM
+/*ABOUT ME
 =======================================*/
-#contact-form {
-    background-color: #eee;
-    margin: 0 auto;
-    width: fit-content;
-    border-radius: 2%;
+header #about-me {
+    display:table;
+    flex-direction: row;
+    justify-content: center;
+}
+header h4 {
+    font-size: 2rem;
 }
 
-#name {
-    order:1;
+#about-web {
+    display:table-cell;
 }
-#email {
-    order:2;
+
+#about-design{
+    display:table-cell;
 }
-#phone {
-    order:3;
+
+#about-beer{
+    display:table-cell;
 }
-#msg {
-    order:4;
+
+.icon-embed2, .icon-display, .icon-glass {
+    font-size: 2em;
 }
+
+
+/*FOOTER
+=======================================*/
+footer p {
+    order: 1;
+    padding-left: 1%;
+}
+footer #social-media {
+    order: 2;
+    padding-right: 1%;
+}
+footer span {
+    margin: 0 5px;
+}
+

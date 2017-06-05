@@ -12,14 +12,17 @@ function Project(projectDataObj) {
 
 
 Project.prototype.toHtml = function () {
-    var $newProject = $('article.template').clone();
-    $newProject.removeClass('template');
+    var templateFiller = Handlebars.compile($('#template').html());
+    var filledTemplate = templateFiller (this);
 
-    $newProject.find('img').attr('src', this.filepath);
-    $newProject.find('h2').html(this.name);
-    $newProject.find('h4').html(this.date);
-    $newProject.find('p').html(this.description);
-    return $newProject;
+    // var $newProject = $('article.template').clone();
+    // $newProject.removeClass('template');
+
+    // $newProject.find('img').attr('src', this.filepath);
+    // $newProject.find('h2').html(this.name);
+    // $newProject.find('h4').html(this.date);
+    // $newProject.find('p').html(this.description);
+    return filledTemplate;
 };
 
 
@@ -30,6 +33,7 @@ projectData.forEach(function (projectDataObj) {
 
 allProjects.forEach(function (project) {
     $('#projects').append(project.toHtml());
+    console.log('hello');
 });
 
 
