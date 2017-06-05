@@ -2,6 +2,10 @@
     display: none;
 }
 
+.main-nav {
+    margin: 0 auto;
+}
+
 /*LINKS
 =======================================*/
 .read-on,.show-less {
@@ -12,6 +16,34 @@
 .read-on:hover, .show-less:hover{
     color: #1EAEDB;
 }
+
+/*ABOUT ME
+=======================================*/
+header #about-me {
+    display:table;
+    flex-direction: row;
+    justify-content: center;
+}
+header h4 {
+    font-size: 2rem;
+}
+
+#about-web {
+    display:table-cell;
+}
+
+#about-design{
+    display:table-cell;
+}
+
+#about-beer{
+    display:table-cell;
+}
+
+.icon-embed2, .icon-display, .icon-glass {
+    font-size: 2em;
+}
+
 
 /*FOOTER
 =======================================*/

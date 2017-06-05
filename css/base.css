@@ -29,8 +29,8 @@ hr {
     width: 80%;
 }
 nav a {
-    font-family: 'Syncopate', sans-serif;
-
+    font-family: 'Montserrat', Helvetica, sans-serif;
+    font-size: 1.2em;
 }
 
 
@@ -148,4 +148,7 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+footer p {
+    display: inline;
 }

@@ -44,7 +44,8 @@
     </header>
     <main id="home">
         <nav class="main-nav">
-            <div class="icon-menu3" data-icon="&#xe9bf;"></div>
+            <img id ="hex-menu"src="imgs/menuhex-01.svg" width="50" height="50"/>
+            <!--<div class="icon-menu3" data-icon="&#xe9bf;"></div>-->
             <ul id="nav-list">
                 <li class="tab" data-content="home"><a href="#">HOME</a></li>
                 <li class="tab" data-content="about-me"><a href="#about-me">ABOUT</a></li>
@@ -52,31 +53,33 @@
                 <li class="tab" data-content="contact-me"><a href="#contact-me">CONTACT</a></li>
             </ul>
         </nav>
+        <br/>
         <section id="about-me" class="tab-content">
             <div>
-                <img src="imgs/profile-pic.jpg" width="400" height="300">
-                <h4>ABOUT ME</h4>
-                <p>Fam lo-fi tattooed, try-hard narwhal fashion axe kale chips four loko biodiesel wolf pabst. Dreamcatcher
-                    fam flannel pabst farm-to-table PBR&B. Vegan enamel pin live-edge mustache, DIY shabby chic before they
-                    sold out PBR&B sustainable kombucha. Fanny pack la croix letterpress glossier, pork belly meggings cred
-                    paleo. </p>
+                <!--<img src="imgs/profile-pic.jpg" width="400" height="300">-->
                 <!--    TODO: add icons (web developer, graphic designer, beer conneseur blah blah, actually fill in About Me info, add resume details    -->
+                <h4>What I Do</h4>
+                <div id="about-web">
+                <span class="icon-embed2" data-icon="&#xe9bf;"></span>
+                <p>Web Development</p>
+                <p>Hashtag edison bulb prism, echo park crucifix meh brooklyn roof party hexagon flannel gochujang next level chambray taxidermy. Fap forage venmo adaptogen tumeric cronut. Pug taxidermy PBR&B blog trust fund. Mlkshk swag sartorial +1, gochujang chicharrones paleo.</p>
+                </div>
+                <div id="about-design">
+                <span class="icon-display" data-icon="&#xe9bf;"></span>
+                <p>Graphic Design</p>
+                <p>Hashtag edison bulb prism, echo park crucifix meh brooklyn roof party hexagon flannel gochujang next level chambray taxidermy. Fap forage venmo adaptogen tumeric cronut. Pug taxidermy PBR&B blog trust fund. Mlkshk swag sartorial +1, gochujang chicharrones paleo.</p>
+                </div>
+                <div id="about-beer">
+                <span class="icon-glass" data-icon="&#xe9bf;"></span>
+                <p>Beer Geek</p>
+                <p>Hashtag edison bulb prism, echo park crucifix meh brooklyn roof party hexagon flannel gochujang next level chambray taxidermy. Fap forage venmo adaptogen tumeric cronut. Pug taxidermy PBR&B blog trust fund. Mlkshk swag sartorial +1, gochujang chicharrones paleo.</p>
+                </div>
 
             </div>
         </section>
         <hr id="main-hr" />
         <section id="projects" class="tab-content">
-            <!--<article class="template">
-                <img src="imgs/" width="800" height="500">
-                <h2>Title</h2>
-                <h4>Date Created</h4>
-                <p class="project-body">Project Description goes here</p>
-                <a href="#" class="read-on">Read on &rarr; </a>
-                <a href="#" class="show-less hidden">Show less &larr; </a>
-                <hr>
-            </article>-->
         </section>
-        <!--    TODO: Add contact form at bottom of page (input text fields) -->
         <section id="contact-form">
             <form id="contact-me" class="tab-content">
                 <legend>CONTACT ME </legend>
@@ -112,6 +115,7 @@
     <script src="js/projects.js" type="text/javascript"></script>
     <script src="js/app.js" type="text/javascript"></script>
     <script src="js/projectView.js" type="text/javascript"></script>
+    <script src="js/styles.js" type="text/javascript"></script>
 </body>
 
 </html>
