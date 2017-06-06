@@ -38,7 +38,14 @@ projectView.setTeasers = function () {
 
 };
 
-$(document).ready(function () {
+// $(document).ready(function () {
+// })
+
+//create projectView initIndexPage function to append articles to HTML with above handle nav and set teasers
+projectView.initIndexPage = function () {
+    //initIndexPage function , to call in HTML file?
+    
+
     projectView.handleMainNav();
     projectView.setTeasers();
-})
+};
