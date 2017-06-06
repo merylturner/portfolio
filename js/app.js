@@ -7,10 +7,9 @@ function Project(projectDataObj) {
     this.description = projectDataObj.description;
     this.filepath = 'imgs/' + projectDataObj.filepath;
 }
-//load all projects to array on Project model
+
 Project.all = [];
 
-//handlebars template on all project data to fill html
 Project.prototype.toHtml = function () {
     var templateFiller = Handlebars.compile($('#template').html());
     var filledTemplate = templateFiller(this);
@@ -18,7 +17,6 @@ Project.prototype.toHtml = function () {
     return filledTemplate;
 };
 
-//create new Project for ea project data and push to Project.all array
 Project.loadAll = function (projectData) {
     projectData.forEach(function (projectData) {
         Project.all.push(new Project(projectData));
@@ -26,7 +24,7 @@ Project.loadAll = function (projectData) {
     Project.all.forEach(function (project) {
         $('#projects').append(project.toHtml());
     });
-    
+
 }
 
 Project.fetchAll = function (projectData) {
@@ -39,7 +37,6 @@ Project.fetchAll = function (projectData) {
 }
 
 function runWhenDone(projectData) {
-    console.log(projectData);
     Project.loadAll(projectData);
     projectView.initIndexPage();
 }
@@ -49,6 +46,5 @@ function runWhenFails(err, data, message) {
     console.log(data);
     console.log(message);
 }
-
 
 $('.template').hide();

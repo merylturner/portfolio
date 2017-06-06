@@ -1,17 +1,7 @@
-/*.main-nav ul {
-    display: none;
-    list-style: none;
-    clear: both;
-}*/
-
-
 .icon-circle-down {
     color: white;
 }
 
-/*.scroll {
-    transform: translate(200px, 0);
-}*/
 /*FORM
 =======================================*/
 form {
@@ -102,6 +92,7 @@ form button {
     .main-nav:hover ul {
         display:inline-block;
     }
+    
     
     /*.icon-menu {
         display: block;

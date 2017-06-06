@@ -19,10 +19,11 @@
 
 /*ABOUT ME
 =======================================*/
-header #about-me {
+#about-me {
     display:table;
     flex-direction: row;
     justify-content: center;
+    margin-top: 5%;
 }
 header h4 {
     font-size: 2rem;
@@ -30,20 +31,48 @@ header h4 {
 
 #about-web {
     display:table-cell;
+    padding: 0 2%;
 }
 
 #about-design{
     display:table-cell;
+    padding: 0 2%;
 }
 
 #about-beer{
     display:table-cell;
+    padding: 0 2%;
 }
 
 .icon-embed2, .icon-display, .icon-glass {
     font-size: 2em;
 }
 
+/*PROJECTS
+=======================================*/
+#projects {
+    background-color: lightgrey;
+}
+/*article {
+    display: flex;
+    flex-direction: row;
+}
+article section {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+    height: fit-content;
+}
+article h2 {
+    order: 1;
+}
+article h4 {
+    order: 2;
+}
+.read-on {
+    order:3;
+}*/
 
 /*FOOTER
 =======================================*/

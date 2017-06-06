@@ -18,12 +18,15 @@
 
     <script id="template" type="text/x-handlebars-template">
         <article>
-            <img src="{{filepath}}" width="800" height="500">
+            <img src="{{filepath}}" width="600" height="400">
             <h2>{{name}}</h2>
             <h4>{{date}}</h4>
-            <section class="project-body">{{{description}}}</section>
+            <section class="project-body">{{{description}}}
             <a href="#" class="read-on">Read on &rarr; </a>
             <a href="#" class="show-less hidden">Show less &larr; </a>
+            <a href="{{webaddress}}"> Hey</a>
+            <a href="https://merylturner.github.io/about-me/">{{githublink}} HEy</a>
+            </section>
             <hr>
         </article>
     </script>
@@ -78,6 +81,7 @@
             </div>
         </section>
         <hr id="main-hr" />
+
         <section id="projects" class="tab-content">
         </section>
         <section id="contact-form">
