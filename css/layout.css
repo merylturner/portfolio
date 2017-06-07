@@ -9,8 +9,8 @@
 /*LINKS
 =======================================*/
 .read-on,.show-less {
-        text-decoration: none;
-        color: black;
+    text-decoration: none;
+    color: black;
 }
 
 .read-on:hover, .show-less:hover{
@@ -19,30 +19,60 @@
 
 /*ABOUT ME
 =======================================*/
-header #about-me {
+#about-me {
     display:table;
     flex-direction: row;
     justify-content: center;
+    margin: 5% 10%;
+    height: 100vh;
 }
 header h4 {
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 #about-web {
     display:table-cell;
+    padding: 0 2%;
 }
 
 #about-design{
     display:table-cell;
+    padding: 0 2%;
 }
 
 #about-beer{
     display:table-cell;
+    padding: 0 2%;
 }
 
 .icon-embed2, .icon-display, .icon-glass {
-    font-size: 2em;
+    font-size: 3em;
+    color: darkcyan;
 }
+
+/*PROJECTS
+=======================================*/
+#projects {
+    /*background-color: lightgrey;*/
+    display: block;
+}
+article {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.project-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.project-links a {
+    padding: 0 5%;
+    width: 100%;
+}
+
 
 
 /*FOOTER

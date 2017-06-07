@@ -4,8 +4,8 @@ var projectView = {};
 
 projectView.handleMainNav = function () {
     $('.main-nav .tab').on('click', function () {
-        event.preventDefault();
         var whereToGo = $(this).data('content');
+        event.preventDefault();
 
         $('.tab-content').hide();
         $('#main-hr').hide();
@@ -38,7 +38,7 @@ projectView.setTeasers = function () {
 
 };
 
-$(document).ready(function () {
+projectView.initIndexPage = function () {
     projectView.handleMainNav();
     projectView.setTeasers();
-})
+};

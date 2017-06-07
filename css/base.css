@@ -10,10 +10,19 @@ html {
 }
 
 main {
-    padding: 2%;
     text-align: center;
-    margin: 0 10%;
+    width: 100%;
+    margin: 5% auto;
 }
+
+article {
+    padding: 5% 10%;
+}
+
+article p {
+    display: block;
+}
+
 li {
     list-style-type: none;
     font-size: .8em;
@@ -21,13 +30,14 @@ li {
 }
 
 img {
-    max-width: 100%;
+    max-width: 50%;
 }
 
 hr {
     border-top: 1px solid #eee;
     width: 80%;
 }
+
 nav a {
     font-family: 'Montserrat', Helvetica, sans-serif;
     font-size: 1.2em;
@@ -151,4 +161,19 @@ footer {
 }
 footer p {
     display: inline;
+}
+
+
+@media screen and (min-device-width : 320px) and (max-device-width : 600px) {
+    body {
+        width: 100vw;
+        height: 100vh;
+    }
+    header {
+        width: 100vw;
+        height: 100%;
+    }
+    main {
+        display:none;
+    }
 }
