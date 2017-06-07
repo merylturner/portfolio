@@ -14,9 +14,15 @@ main {
     width: 100%;
     margin: 5% auto;
 }
-section {
+
+article {
     padding: 5% 10%;
 }
+
+article p {
+    display: block;
+}
+
 li {
     list-style-type: none;
     font-size: .8em;
@@ -24,13 +30,14 @@ li {
 }
 
 img {
-    max-width: 100%;
+    max-width: 50%;
 }
 
 hr {
     border-top: 1px solid #eee;
     width: 80%;
 }
+
 nav a {
     font-family: 'Montserrat', Helvetica, sans-serif;
     font-size: 1.2em;
