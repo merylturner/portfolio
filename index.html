@@ -18,7 +18,7 @@
 
     <script id="template" type="text/x-handlebars-template">
         <article>
-            <img src="{{filepath}}" width="600" height="400">
+            <img src="{{filepath}}" width="580" height="350">
             <div>
                 <section class="project-body">
                     <h2>{{name}}</h2>
@@ -27,8 +27,10 @@
                     <a href="#" class="read-on">Read on &rarr; </a>
                     <a href="#" class="show-less hidden">Show less &larr; </a>
                 </section>
-                <!--<a href="{{webaddress}}"> {{webaddress}}{{name}}</a>
-                <a href="https://merylturner.github.io/about-me/">{{githublink}} HEy</a>-->
+            <div class="project-links">
+                <a href="{{webaddress}}"> Website</a>
+                <a href="{{githublink}}"> Github</a>
+            </div>
             </div>
         </article>
         <hr>
@@ -65,6 +67,8 @@
                 <!--<img src="imgs/profile-pic.jpg" width="400" height="300">-->
                 <!--    TODO: add icons (web developer, graphic designer, beer conneseur blah blah, actually fill in About Me info, add resume details    -->
                 <h4>What I Do</h4>
+                <br/>
+                <br/>
                 <div id="about-web">
                     <span class="icon-embed2" data-icon="&#xe9bf;"></span>
                     <h6>Web Development</h6>
@@ -88,10 +92,11 @@
                 </div>
 
             </div>
-        <br/>
+            <br/>
         </section>
         <hr id="main-hr" />
 
+        <h4>My Work</h4>
         <section id="projects" class="tab-content">
         </section>
 

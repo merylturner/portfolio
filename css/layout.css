@@ -23,15 +23,11 @@
     display:table;
     flex-direction: row;
     justify-content: center;
-    margin-top: 5%;
+    margin: 5% 10%;
+    height: 100vh;
 }
 header h4 {
     font-size: 1.5rem;
-}
-header h6 {
-    /*font-size: 1.2em;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 800;*/
 }
 
 #about-web {
@@ -57,7 +53,7 @@ header h6 {
 /*PROJECTS
 =======================================*/
 #projects {
-    background-color: lightgrey;
+    /*background-color: lightgrey;*/
     display: block;
 }
 article {
@@ -72,6 +68,11 @@ article {
     flex-wrap: wrap;
     width: 100%;
 }
+.project-links a {
+    padding: 0 5%;
+    width: 100%;
+}
+
 
 
 /*FOOTER

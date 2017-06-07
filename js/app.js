@@ -6,6 +6,9 @@ function Project(projectDataObj) {
     this.date = projectDataObj.date;
     this.description = projectDataObj.description;
     this.filepath = 'imgs/' + projectDataObj.filepath;
+    this.webaddress = projectDataObj.webaddress;
+    this.githublink = projectDataObj.githublink;
+    this.category = projectDataObj.category;
 }
 
 Project.all = [];
