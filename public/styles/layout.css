@@ -2,6 +2,7 @@
     display: none;
 }
 
+@media screen and (min-width: 600px){
 .main-nav {
     margin: 0 auto;
 }
@@ -84,5 +85,7 @@ footer #social-media {
 }
 footer span {
     margin: 0 5px;
+}
+
 }
 
