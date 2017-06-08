@@ -1,0 +1,175 @@
+body {
+        margin: 0;
+        float: none;
+        width: auto;
+        height: 100%;
+}
+
+html {
+    margin: 0;
+}
+
+main {
+    text-align: center;
+    width: 100%;
+    margin: 5% auto;
+}
+
+article {
+    padding: 5% 10%;
+}
+
+article p {
+    display: block;
+}
+
+li {
+    list-style-type: none;
+    font-size: .8em;
+    color:black;
+}
+
+img {
+    max-width: 50%;
+}
+
+hr {
+    border-top: 1px solid #eee;
+    width: 80%;
+}
+
+nav a {
+    font-family: 'Raleway', Helvetica, sans-serif;
+    font-size: 1.2em;
+}
+
+
+/*FONTS
+=======================================*/
+* {
+    font-family: 'Raleway', Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+}
+
+h2, h4 {
+    font-family: 'Raleway',Helvetica, sans-serif;
+    font-weight: 800;
+    font-size: 2em;
+}
+
+
+
+/*HEADER
+=======================================*/
+header {
+    width: 100%;
+    padding: 20px;
+    height:100vh;
+    display:table;
+    color: black;
+    
+}
+header section {
+    width:100%;
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+    display: table-cell;
+}
+
+header div {
+    height: 15%;
+    text-align: center;
+    color:black;
+    vertical-align: bottom;
+    display: table-row;
+    position: relative;
+    font-size: .8em;
+    line-height: .5em;
+}
+
+nav {
+    display:inline;
+    color:black;
+    margin: 0 auto;
+    padding: 1em 2em;
+}
+
+h1 {
+    color:black;
+    font-family: 'Syncopate', sans-serif;
+    font-weight: 800;
+    font-size: 5rem;
+    margin-bottom: 2%;
+    text-transform: uppercase;
+    line-height: .5em;
+}
+header p {
+    font-family: 'Syncopate', sans-serif;
+    color:black;
+    letter-spacing: .5em;
+    text-transform: uppercase;
+}
+
+/*LINKS
+=======================================*/
+nav a, nav a:link {
+    text-decoration: none;
+}
+nav a:hover {
+    color: #1EAEDB;;
+}
+a {
+    text-decoration: none;
+}
+
+/*BUTTONS
+=======================================*/
+button {
+    background-color: black;
+}
+button a {
+    color:white;
+}
+    
+button:hover {
+    background-color: #1EAEDB;
+    color:white;
+}
+
+button a:hover {
+    color: white;
+}
+
+
+/*FOOTER
+=======================================*/
+footer {
+    color: black;
+    width: 100%;
+    margin: 0;
+    position: absolute;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+footer p {
+    display: inline;
+}
+
+
+@media screen and (min-device-width : 320px) and (max-device-width : 600px) {
+    body {
+        width: 100vw;
+        height: 100vh;
+    }
+    header {
+        width: 100vw;
+        height: 100%;
+    }
+    main {
+        display:none;
+    }
+}
