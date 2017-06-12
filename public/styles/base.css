@@ -11,7 +11,7 @@ html {
 
 main {
     text-align: center;
-    width: 100%;
+    width: 100vw;
     margin: 5% auto;
 }
 
@@ -29,10 +29,6 @@ li {
     color:black;
 }
 
-img {
-    max-width: 50%;
-}
-
 hr {
     border-top: 1px solid #eee;
     width: 80%;
@@ -44,7 +40,7 @@ nav a {
 }
 
 
-/*FONTS
+/*FONTS - desktop
 =======================================*/
 * {
     font-family: 'Raleway', Helvetica, sans-serif;
@@ -56,15 +52,28 @@ h2, h4 {
     font-family: 'Raleway',Helvetica, sans-serif;
     font-weight: 800;
     font-size: 2em;
+    margin-top: 0;
+    margin-bottom: 2%;
 }
 
-
+main h5 {
+    font-size: 1.25em;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 2%;
+}
+main h6 {
+    font-size: .75em;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 2%;
+}
 
 /*HEADER
 =======================================*/
 header {
     width: 100%;
-    padding: 20px;
+    /*padding: 20px;*/
     height:100vh;
     display:table;
     color: black;
@@ -143,33 +152,6 @@ button a:hover {
 }
 
 
-/*FOOTER
-=======================================*/
-footer {
-    color: black;
-    width: 100%;
-    margin: 0;
-    position: absolute;
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-footer p {
-    display: inline;
-}
 
 
-@media screen and (min-device-width : 320px) and (max-device-width : 600px) {
-    body {
-        width: 100vw;
-        height: 100vh;
-    }
-    header {
-        width: 100vw;
-        height: 100%;
-    }
-    main {
-        display:none;
-    }
-}
+

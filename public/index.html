@@ -2,35 +2,33 @@
 <html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="minimum-scale=0">
-    <meta name="viewport" content="user-scalable=yes">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="vendor/styles/skeleton.css" type="text/css" rel="stylesheet" />
     <link href="vendor/styles/normalize.css" type="text/css" rel="stylesheet" />
     <link href="styles/icons.css" type="text/css" rel="stylesheet" />
     <link href="styles/base.css" type="text/css" rel="stylesheet" />
-    <link href="styles/modules.css" type="text/css" rel="stylesheet" />
     <link href="styles/layout.css" type="text/css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Anton|Barrio|Bubbler+One|Inconsolata|Montserrat+Subrayada|Open+Sans+Condensed:300|Oswald|Raleway:300,400,800,900|Montserrat:300, 400, 800, 900|Syncopate"
+    <link href="styles/modules.css" type="text/css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Anton|Barrio|Bubbler+One|Inconsolata|Montserrat+Subrayada|Open+Sans+Condensed:300|Oswald|Raleway:300,400,700,800,900|Montserrat:300, 400, 800, 900|Syncopate"
         rel="stylesheet">
     <title>Made By Meryl</title>
 
     <script id="template" type="text/x-handlebars-template">
         <article>
-            <img src="{{filepath}}" width="580" height="350">
-            <div>
+            <img src="{{filepath}}">
+            <div id="project-text">
                 <section class="project-body">
                     <h2>{{name}}</h2>
-                    <h6>{{date}}</h6>
+                    <h6>{{category}}</h6>
+                    <h5>{{date}}</h5>
                     {{{description}}}
                     <a href="#" class="read-on">Read on &rarr; </a>
                     <a href="#" class="show-less hidden">Show less &larr; </a>
                 </section>
                 <div class="project-links">
-                    <a href="{{webaddress}}"> Website</a>
-                    <a href="{{githublink}}"> Github</a>
+                    <a href="{{webaddress}}"> Visit Website</a>
+                    <!--<a href="{{githublink}}"> See Code</a>-->
                 </div>
             </div>
         </article>
@@ -41,8 +39,8 @@
 <body>
     <header>
         <section>
-            <h1>Made By Meryl</h1>
-            <p>Web Developer + Graphic Designer </p>
+            <h1>Meryl Turner</h1>
+            <p>Web Developer + <br class="mobile-br" /> Graphic Designer </p>
         </section>
         <div id="learn-about-me">
             <a href="#home">
@@ -64,7 +62,6 @@
         <br/>
         <section id="about-me" class="tab-content">
             <div>
-                <!--<img src="imgs/profile-pic.jpg" width="400" height="300">-->
                 <!--    TODO: add icons (web developer, graphic designer, beer conneseur blah blah, actually fill in About Me info, add resume details    -->
                 <h4>What I Do</h4>
                 <br/>
@@ -83,14 +80,6 @@
                         level chambray taxidermy. Fap forage venmo adaptogen tumeric cronut. Pug taxidermy PBR&B blog trust
                         fund. Mlkshk swag sartorial +1, gochujang chicharrones paleo.</p>
                 </div>
-                <!--<div id="about-beer">
-                    <span class="icon-glass" data-icon="&#xe9bf;"></span>
-                    <h6>Beer Geek</h6>
-                    <p>Hashtag edison bulb prism, echo park crucifix meh brooklyn roof party hexagon flannel gochujang next
-                        level chambray taxidermy. Fap forage venmo adaptogen tumeric cronut. Pug taxidermy PBR&B blog trust
-                        fund. Mlkshk swag sartorial +1, gochujang chicharrones paleo.</p>
-                </div>-->
-
             </div>
             <br/>
         </section>
@@ -104,13 +93,9 @@
             <form id="contact-me" class="tab-content">
                 <legend>Want to work together?</legend>
                 <fieldset>
-                    <!--<label for="name">Name</label>-->
                     <input type="text" id="name" name="user_name" placeholder="Name"></input>
-                    <!--<label for="email">Email</label>-->
                     <input type="text" id="email" name="user_mail" placeholder="Email"></input>
-                    <!--<label for="phone">Phone</label>-->
                     <input type="text" id="phone" name="user_phone" placeholder="Phone"></input>
-                    <!--<label for="msg">Message</label>-->
                     <textarea type="text" id="msg" name="user_message" placeholder="Message"></textarea>
                     <button><a>Submit</a></button>
                 </fieldset>
@@ -120,22 +105,16 @@
     <br/>
     <br/>
     <footer>
-        <!--<section>
-            <h4>Want to work together?</h4>
-            <p>Hashtag edison bulb prism, echo park crucifix meh brooklyn roof party hexagon flannel gochujang next</p>
-        </section>-->
-        <!--    TODO: Fill in social media >>ICONS , phone and email contacts   -->
-            <!--<p>hello@madebymeryl.com</p>-->
-        <div id = "name">
-            <p>&copy; Made By Meryl</p>
-            <p>Web Developer | Graphic Designer</p>
-        </div>
+        <!--<h5>Meryl Turner</h5>-->
+        <p>hello@madebymeryl.com</p>
         <div id="social-media">
-            <a class="icon-facebook" data-icon="&#xea91;" href="https://www.facebook.com/meryl.a.turner"></a>
-            <a class="icon-instagram" data-icon="&#xea91;" href="https://www.instagram.com/madebymeryl/"></a>
-            <a class="icon-twitter" data-icon="&#xea91;" href="https://twitter.com/merylturner08"></a>
-            <a class="icon-linkedin2" data-icon="&#xea91;" href="https://www.linkedin.com/in/merylturner/"></a>
+            <span class="icon-facebook" data-icon="&#xea91;" href="https://www.facebook.com/meryl.a.turner"></span>
+            <span class="icon-instagram" data-icon="&#xea91;" href="https://www.instagram.com/madebymeryl/"></span>
+            <span class="icon-twitter" data-icon="&#xea91;" href="https://twitter.com/merylturner08"></span>
+            <span class="icon-linkedin2" data-icon="&#xea91;" href="https://www.linkedin.com/in/merylturner/"></span>
+            <span class="icon-github" data-icon="&#xea91;" href="https://www.github.com/merylturner/"></span>
         </div>
+        <p>&copy; Made By Meryl</p>
     </footer>
 
 
