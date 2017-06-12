@@ -73,7 +73,7 @@ main h6 {
 =======================================*/
 header {
     width: 100%;
-    padding: 20px;
+    /*padding: 20px;*/
     height:100vh;
     display:table;
     color: black;

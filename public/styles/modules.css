@@ -35,6 +35,7 @@ fieldset {
     flex-wrap: wrap;
     justify-content: space-around;
     text-align: center;
+    margin-right: 0;
 }
 
 input, textarea {
@@ -108,7 +109,6 @@ form button {
     }
 
     main {
-        /*padding: 2% 2%;*/
         display:block;
         width: 100vw;
     }
@@ -147,11 +147,19 @@ form button {
     legend {
         width: 50vw;
         font-size: 10vw;
+        line-height: 1.1em;
+    }
+
+    fieldset {
+        margin: 0 -5%;
     }
 
     /*FOOTER
     =======================================*/
     footer {
         display: 100vw;
+        padding-top: 5%;
+        padding-bottom: 5%;
     }
+
 }

@@ -9,6 +9,7 @@
     header p {
         line-height: 1.5rem;
         font-size: .8em;
+        margin: 2% 10%;
     }
 
     main h2 {
@@ -36,18 +37,16 @@
         font-size: 2em;
     }
 
-    #nav-list {
-        display: inline;
-    }
-    .main-nav ul li:after {
-        content: '/';
-        padding: 0 2% 0 2%;
+    .main-nav {
+        display: inline-block;
+        width: 80vw;
+        margin: 0 auto;
     }
 
     img {
         width: 100%;
         height: 100%;
-        position: realtive;
+        position: relative;
     }
 
     /*FOOTER
@@ -58,9 +57,9 @@
         width: 100%;
         margin: 0;
         display: block;
-        height: 20vh;
         position:absolute;
         text-align: center;
+        padding: 5% 0;
     }
 
     footer p {
@@ -74,6 +73,7 @@
         position: relative;
         font-size: 1.5em;
     }
+
 }
 
 /*DESKTOP
@@ -87,17 +87,11 @@
     .mobile-br {
         display: none;
     }
-    
-    .main-nav ul li:after {
-        content: '/';
-        margin: 0 40% 0 40%;
-    }
 
     #nav-list {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        /*width: 60vw;*/
         margin: 0 auto;
     }
 
@@ -105,7 +99,6 @@
         text-decoration: underline;
     }
 
-    
     
 
     /*LINKS
@@ -189,7 +182,7 @@
         width: 100%;
         margin: 0;
         display: block;
-        height: 30vh;
+        padding: 5% 0;
         position:absolute;
         text-align: center;
     }
