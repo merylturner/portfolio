@@ -20,34 +20,16 @@ var app = app || {};
         var filledTemplate = templateFiller(this);
 
         return filledTemplate;
+
     };
 
-    //change forEach's to .map, .reduce
+
     Project.loadAll = function (projectData) {
-        // projectData.forEach(function (projectData) {
-        //     Project.all.push(new Project(projectData));
-        // });
-        
-        /* OLD forEach():
-        rawData.forEach(function(ele) {
-        Article.all.push(new Article(ele));
-        });
-        */
-
-        console.log('before ' ,Project.all);
         Project.all = projectData.map(obj => new Project(obj));
-        console.log('after', Project.all);
-
-
-
-        // Article.all = rows.map(obj => new Article(obj));
-
-
 
         Project.all.forEach(function (project) {
             $('#projects').append(project.toHtml());
         });
-
     }
 
     Project.fetchAll = function (projectData) {
@@ -66,9 +48,8 @@ var app = app || {};
 
     function runWhenFails(err) {
         console.error('error:', err)
-        console.log(data);
-        console.log(message);
     }
 
-   module.Project = Project;
+    module.Project = Project;
+
 }(app));
