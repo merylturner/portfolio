@@ -14,5 +14,5 @@ app.post('/projects', bodyParser, function (request, response) {
 })
 
 app.listen(PORT, function () {
-    console.log('hey brah!');
+    console.log('hey brah! your port is running on ', PORT);
 });
