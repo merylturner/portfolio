@@ -5,22 +5,6 @@ var app = app || {};
 (function (module) {
     var projectView = {};
 
-    // projectView.handleMainNav = function () {
-    //     $('.main-nav .tab').on('click', function () {
-    //         var whereToGo = $(this).data('content');
-    //         event.preventDefault();
-
-    //         $('.tab-content').hide();
-    //         $('#main-hr').hide();
-    //         $('#' + whereToGo).fadeIn(750);
-
-    //         if (whereToGo === 'home') {
-    //             $('.tab-content').show();
-    //             $('#main-hr').show();
-    //         }
-    //     })
-    // };
-
     projectView.setTeasers = function () {
         $('.project-body *:nth-of-type(n+2)').hide();
 
@@ -42,7 +26,6 @@ var app = app || {};
     };
 
     projectView.initIndexPage = function () {
-        // projectView.handleMainNav();
         projectView.setTeasers();
     };
 
