@@ -32,18 +32,21 @@ var app = app || {};
         });
     }
 
-    Project.fetchAll = function (projectData) {
-        $.ajax({
-            type: 'GET',
-            url: './data/projects.json',
-            success: runWhenDone,
-            error: runWhenFails
-        });
+    Project.fetchAll = function (projectData, callback) {
+        if (!Project.all.length) {
+            $.ajax({
+                type: 'GET',
+                url: './data/projects.json',
+                success: runWhenDone,
+                error: runWhenFails
+            })
+                .then(callback);
+        }
     }
 
     function runWhenDone(projectData) {
         Project.loadAll(projectData);
-        projectView.initIndexPage();
+        app.projectView.initIndexPage();
     }
 
     function runWhenFails(err) {

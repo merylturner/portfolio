@@ -1,24 +1,25 @@
 'use strict';
 
-// var app = {};
-var projectView = {};
+var app = app || {};
 
 (function (module) {
-    projectView.handleMainNav = function () {
-        $('.main-nav .tab').on('click', function () {
-            var whereToGo = $(this).data('content');
-            event.preventDefault();
+    var projectView = {};
 
-            $('.tab-content').hide();
-            $('#main-hr').hide();
-            $('#' + whereToGo).fadeIn(750);
+    // projectView.handleMainNav = function () {
+    //     $('.main-nav .tab').on('click', function () {
+    //         var whereToGo = $(this).data('content');
+    //         event.preventDefault();
 
-            if (whereToGo === 'home') {
-                $('.tab-content').show();
-                $('#main-hr').show();
-            }
-        })
-    };
+    //         $('.tab-content').hide();
+    //         $('#main-hr').hide();
+    //         $('#' + whereToGo).fadeIn(750);
+
+    //         if (whereToGo === 'home') {
+    //             $('.tab-content').show();
+    //             $('#main-hr').show();
+    //         }
+    //     })
+    // };
 
     projectView.setTeasers = function () {
         $('.project-body *:nth-of-type(n+2)').hide();
@@ -41,10 +42,10 @@ var projectView = {};
     };
 
     projectView.initIndexPage = function () {
-        projectView.handleMainNav();
+        // projectView.handleMainNav();
         projectView.setTeasers();
     };
 
     module.projectView = projectView;
 
-}(projectView));
+}(app));

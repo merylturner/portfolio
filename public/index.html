@@ -28,7 +28,6 @@
                 </section>
                 <div class="project-links">
                     <a href="{{webaddress}}"> Visit Website</a>
-                    <!--<a href="{{githublink}}"> See Code</a>-->
                 </div>
             </div>
         </article>
@@ -53,10 +52,10 @@
         <nav class="main-nav">
             <!--<img id="hex-menu" src="imgs/menuhex-01.svg" width="50" height="50" />-->
             <ul id="nav-list">
-                <li class="tab" data-content="home"><a href="#">HOME</a></li>
-                <li class="tab" data-content="about-me"><a href="#about-me">ABOUT</a></li>
-                <li class="tab" data-content="projects"><a href="#projects">PROJECTS</a></li>
-                <li class="tab" data-content="contact-me"><a href="#contact-me">CONTACT</a></li>
+                <li class="tab" data-content="home"><a href="/">HOME</a></li>
+                <li class="tab" data-content="about-me"><a href="/about">ABOUT</a></li>
+                <li class="tab" data-content="projects"><a href="/projects">PROJECTS</a></li>
+                <li class="tab" data-content="contact-me"><a href="/contact">CONTACT</a></li>
             </ul>
         </nav>
         <br/>
@@ -121,11 +120,20 @@
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.min.js"></script>
-    <script src="scripts/projects.js" type="text/javascript"></script>
-    <script src="scripts/projectView.js" type="text/javascript"></script>
-    <script>
+    <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
+
+    <script src="scripts/models/projects.js" type="text/javascript"></script>
+    <script src="scripts/views/projectView.js" type="text/javascript"></script>
+
+    <script src="scripts/controllers/aboutController.js" type="text/javascript"></script>
+    <script src="scripts/controllers/contactController.js" type="text/javascript"></script>
+    <script src="scripts/controllers/projectController.js" type="text/javascript"></script>
+    <script src="scripts/controllers/homeController.js" type="text/javascript"></script>
+
+    <script src="scripts/controllers/routes.js" type="text/javascript"></script>
+    <!--<script>
         app.Project.fetchAll();
-    </script>
+    </script>-->
 </body>
 
 </html>
