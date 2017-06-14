@@ -13,6 +13,10 @@ app.post('/projects', bodyParser, function (request, response) {
     response.send('Record posted!');
 })
 
+app.get('*', function(request, response) {
+    response.sendFile('index.html', {root: './public'});
+})
+
 app.listen(PORT, function () {
     console.log('hey brah! your port is running on ', PORT);
 });

@@ -20,10 +20,10 @@ form {
 legend {
     font-family: 'Raleway', Helvetica, sans-serif;
     font-weight: 800;
-    font-size: 2vw;
+    font-size: 3vw;
     color:black;
     background-color: transparent;
-    margin: 5% auto;
+    margin: 0 auto;
 }
 
 fieldset {
@@ -35,7 +35,6 @@ fieldset {
     flex-wrap: wrap;
     justify-content: space-around;
     text-align: center;
-    margin-right: 0;
 }
 
 input, textarea {
