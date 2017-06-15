@@ -10,6 +10,7 @@ var app = app || {};
         $('main > section').hide();
         $('#about-me').show();
         $('#about-user').show();
+        $('#main-hr').hide();
 
         app.user.requestUser(app.aboutView.userIndex);
     }

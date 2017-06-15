@@ -141,6 +141,12 @@
         color: darkcyan;
     }
 
+    #github-photo {
+        border-radius: 50%;
+        margin-bottom: 5%;
+        margin-top: 5%;
+    }
+
     /*PROJECTS
     =======================================*/
     #projects {
