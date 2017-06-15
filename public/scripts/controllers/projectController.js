@@ -6,7 +6,6 @@ var app = app || {};
     const projectController = {};
 
     projectController.init = function () {
-        console.log('project controller is listening');
         $('main > section').hide();
         $('#projects').show();
         app.Project.fetchAll();

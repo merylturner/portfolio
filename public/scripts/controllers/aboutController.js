@@ -8,8 +8,11 @@ var app = app || {};
     aboutController.init = function () {
         console.log('about controller is listening');
         $('main > section').hide();
-        // $('header').hide();
         $('#about-me').show();
+        $('#about-user').show();
+        $('#main-hr').hide();
+
+        app.user.requestUser(app.aboutView.userIndex);
     }
 
     module.aboutController = aboutController;
