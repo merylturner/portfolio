@@ -118,7 +118,7 @@
         display:table;
         flex-direction: row;
         justify-content: center;
-        margin: 5% 10%;
+        /*margin: 5% 10%;*/
     }
 
     #about-web {

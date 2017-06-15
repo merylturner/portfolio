@@ -27,8 +27,19 @@ var app = app || {};
 
     projectView.initIndexPage = function () {
         projectView.setTeasers();
+        projectView.scrollTo();
     };
 
+    projectView.scrollTo = function () {
+        $('.icon-circle-down').on('click', function () {
+            event.preventDefault();
+            $('html, body').animate({
+                scrollTop: $('#scroll-to-me').offset().top - 50
+            }, 600);
+        })
+
+
+    }
     module.projectView = projectView;
 
 }(app));

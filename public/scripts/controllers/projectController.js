@@ -2,7 +2,7 @@
 
 var app = app || {};
 
-(function(module){
+(function (module) {
     const projectController = {};
 
     projectController.init = function () {
@@ -10,6 +10,7 @@ var app = app || {};
         $('#projects').show();
         app.Project.fetchAll();
         app.projectView.initIndexPage();
+
     }
 
     module.projectController = projectController;

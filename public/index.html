@@ -54,6 +54,7 @@
         </div>
     </header>
     <main id="home">
+        <div id="scroll-to-me"></div>
         <nav class="main-nav">
             <!--<img id="hex-menu" src="imgs/menuhex-01.svg" width="50" height="50" />-->
             <ul id="nav-list">
@@ -95,16 +96,17 @@
         </section>
 
         <section id="contact-form">
-            <form id="contact-me" class="tab-content">
+            <form data-parsley-validate="" id="contact-me" class="tab-content">
                 <legend>Want to work together?</legend>
                 <fieldset>
-                    <input type="text" id="name" name="user_name" placeholder="Name"></input>
-                    <input type="text" id="email" name="user_mail" placeholder="Email"></input>
-                    <input type="text" id="phone" name="user_phone" placeholder="Phone"></input>
-                    <textarea type="text" id="msg" name="user_message" placeholder="Message"></textarea>
-                    <button><a>Submit</a></button>
+                    <input required = "" type="text" id="name" name="user_name" placeholder="Name"></input>
+                    <input required = "" type="text" id="email" name="user_mail" placeholder="Email"></input>
+                    <input required = "" type="text" id="phone" name="user_phone" placeholder="Phone"></input>
+                    <textarea required = "" type="text" id="msg" name="user_message" placeholder="Message"></textarea>
+                    <button id="form-submit"><a>Submit</a></button>
                 </fieldset>
             </form>
+            <div class="hidden"><p>Thanks for your submission! I'll be in touch shortly :)</p></div>
         </section>
     </main>
     <br/>
@@ -113,11 +115,11 @@
         <!--<h5>Meryl Turner</h5>-->
         <p>hello@madebymeryl.com</p>
         <div id="social-media">
-            <span class="icon-facebook" data-icon="&#xea91;" href="https://www.facebook.com/meryl.a.turner"></span>
-            <span class="icon-instagram" data-icon="&#xea91;" href="https://www.instagram.com/madebymeryl/"></span>
-            <span class="icon-twitter" data-icon="&#xea91;" href="https://twitter.com/merylturner08"></span>
-            <span class="icon-linkedin2" data-icon="&#xea91;" href="https://www.linkedin.com/in/merylturner/"></span>
-            <span class="icon-github" data-icon="&#xea91;" href="https://www.github.com/merylturner/"></span>
+            <a><span class="icon-facebook" data-icon="&#xea91;" href="https://www.facebook.com/meryl.a.turner"></a>
+            <a><span class="icon-instagram" data-icon="&#xea91;" href="https://www.instagram.com/madebymeryl/"></a>
+            <a><span class="icon-twitter" data-icon="&#xea91;" href="https://twitter.com/merylturner08"></a>
+            <a><span class="icon-linkedin2" data-icon="&#xea91;" href="https://www.linkedin.com/in/merylturner/"></a>
+            <a><span class="icon-github" data-icon="&#xea91;" href="https://www.github.com/merylturner/"></a>
         </div>
         <p>&copy; Made By Meryl</p>
     </footer>
@@ -130,6 +132,7 @@
 
     <script src="scripts/models/githubToken.js" type="text/javascript"></script>
 
+    <script src="scripts/models/formSubmission.js" type="text/javascript"></script>
     <script src="scripts/models/about.js" type="text/javascript"></script>
     <script src="scripts/models/projects.js" type="text/javascript"></script>
     <script src="scripts/views/projectView.js" type="text/javascript"></script>
