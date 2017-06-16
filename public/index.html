@@ -4,8 +4,9 @@
 <head>
     <meta name="viewport" content="minimum-scale=0">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="vendor/styles/skeleton.css" type="text/css" rel="stylesheet" />
     <link href="vendor/styles/normalize.css" type="text/css" rel="stylesheet" />
+    <link href="vendor/styles/parsley.css" type="text/css" rel="stylesheet" />
+    <link href="vendor/styles/skeleton.css" type="text/css" rel="stylesheet" />
     <link href="styles/icons.css" type="text/css" rel="stylesheet" />
     <link href="styles/base.css" type="text/css" rel="stylesheet" />
     <link href="styles/layout.css" type="text/css" rel="stylesheet" />
@@ -14,7 +15,7 @@
         rel="stylesheet">
     <title>Made By Meryl</title>
     <script id="user-template" type="text/x-handlebars-template">
-        <img src = "{{avatar_url}}" alt = "{{name}} github avatar" width="250" height="250" id="github-photo">
+        <img src="{{avatar_url}}" alt="{{name}} github avatar" width="250" height="250" id="github-photo">
         <h2>{{name}}</h2>
         <p>{{location}}</p>
         <p>{{company}}</p>
@@ -95,22 +96,30 @@
             <h4>My Work</h4>
         </section>
 
+        <div class="invalid-warning hidden">
+            <p>Oh no! Looks like this form is invalid.</p>
+        </div>
+
         <section id="contact-form">
-            <form data-parsley-validate="" id="contact-me" class="tab-content">
+            <form id="contact-me" class="tab-content" data-parsley-validate="">
                 <legend>Want to work together?</legend>
                 <fieldset>
-                    <input required = "" type="text" id="name" name="user_name" placeholder="Name"></input>
-                    <input required = "" type="text" id="email" name="user_mail" placeholder="Email"></input>
-                    <input required = "" type="text" id="phone" name="user_phone" placeholder="Phone"></input>
-                    <textarea required = "" type="text" id="msg" name="user_message" placeholder="Message"></textarea>
+                    <input required="" type="text" id="name" name="user_name" placeholder="Name"></input>
+                    <input required="" type="email"	data-parsley-type="email" id="email" name="user_mail" placeholder="Email" data-parsley-trigger="change"></input>
+                    <input required="" data-parsley-type="number" data-parsley-min="10"id="phone" name="user_phone" placeholder="Phone" data-parsley-trigger="change"></input>
+                    <textarea required="" type="text" id="msg" name="user_message" placeholder="Message"></textarea>
                     <button id="form-submit"><a>Submit</a></button>
                 </fieldset>
             </form>
-            <div class="hidden"><p>Thanks for your submission! I'll be in touch shortly :)</p></div>
+            <div class="hidden">
+                <p>Thanks for your submission! I'll be in touch shortly :)</p>
+            </div>
         </section>
     </main>
     <br/>
     <br/>
+
+
     <footer>
         <!--<h5>Meryl Turner</h5>-->
         <p>hello@madebymeryl.com</p>
@@ -129,6 +138,7 @@
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.min.js"></script>
     <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
+    <script src="vendor/scripts/parsley.js" type="text/javascript"></script>
 
 
     <script src="scripts/models/formSubmission.js" type="text/javascript"></script>
@@ -144,6 +154,9 @@
 
     <script src="scripts/controllers/routes.js" type="text/javascript"></script>
 
+    <script>
+        $('#contact-form').parsley();
+    </script>
 </body>
 
 </html>
