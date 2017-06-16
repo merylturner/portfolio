@@ -118,7 +118,6 @@
         display:table;
         flex-direction: row;
         justify-content: center;
-        /*margin: 5% 10%;*/
     }
 
     #about-web {
@@ -131,10 +130,11 @@
         padding: 0 2%;
     }
 
-    #about-beer{
-        display:table-cell;
-        padding: 0 2%;
+    #about-web p, #about-design p {
+        margin-left: 8%;
+        margin-right: 8%;
     }
+
 
     .icon-embed2, .icon-display, .icon-glass {
         font-size: 3em;
