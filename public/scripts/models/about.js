@@ -11,15 +11,12 @@ var app = app || {};
             $.get('github/user')
                 .then(data => user.data = data, err => console.error(err))
                 .then(callback);
-        }
+        }};
         //     $.ajax({
         //         url: 'https://api.github.com/user',
         //         type: 'GET',
         //         headers: { 'Authorization': `token ${githubToken}` }  //eslint-disable-line
         //     })
-
-
         module.user = user;
-    }
 
 }(app));
