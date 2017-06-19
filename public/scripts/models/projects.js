@@ -11,6 +11,7 @@ var app = app || {};
         this.webaddress = projectDataObj.webaddress;
         this.githublink = projectDataObj.githublink;
         this.category = projectDataObj.category;
+        this.id = projectDataObj.id;
     }
 
     Project.all = [];

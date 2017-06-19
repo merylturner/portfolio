@@ -6,7 +6,8 @@
         "filepath": "salmoncookies_noBG.png",
         "webaddress": "https://merylturner.github.io/about-me/",
         "githublink": "https://github.com/merylturner/about-me",
-        "category" : "HTML CSS JAVASCRIPT"
+        "category" : "HTML CSS JAVASCRIPT",
+        "id" : 1
     },
     {
         "name": "BusMall",
@@ -15,7 +16,8 @@
         "filepath": "busmall_noBG.png",
         "webaddress": "https://merylturner.github.io/bus-mall/",
         "githublink": "https://github.com/merylturner/bus-mall",
-        "category" : "HTML CSS JAVASCRIPT"
+        "category" : "HTML CSS JAVASCRIPT",
+        "id" : 2
     },
     {
         "name": "PocketCode",
@@ -24,6 +26,7 @@
         "filepath": "finalproject_noBG.png",
         "webaddress": "https://jchurchman.github.io/teamrocketman/",
         "githublink": "https://github.com/jchurchman/teamrocketman",
-        "category" : "HTML CSS JAVASCRIPT"
+        "category" : "HTML CSS JAVASCRIPT",
+        "id" : 3
     }
 ]

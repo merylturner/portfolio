@@ -21,7 +21,7 @@
         <p>{{company}}</p>
     </script>
     <script id="template" type="text/x-handlebars-template">
-        <article>
+        <article id="{{id}}">
             <img src="{{filepath}}">
             <div id="project-text">
                 <section class="project-body">
@@ -105,8 +105,8 @@
                 <legend>Want to work together?</legend>
                 <fieldset>
                     <input required="" type="text" id="name" name="user_name" placeholder="Name"></input>
-                    <input required="" type="email"	data-parsley-type="email" id="email" name="user_mail" placeholder="Email" data-parsley-trigger="change"></input>
-                    <input required="" data-parsley-type="number" data-parsley-min="10"id="phone" name="user_phone" placeholder="Phone" data-parsley-trigger="change"></input>
+                    <input required="" type="email" data-parsley-type="email" id="email" name="user_mail" placeholder="Email" data-parsley-trigger="change"></input>
+                    <input required="" data-parsley-type="number" data-parsley-min="10" id="phone" name="user_phone" placeholder="Phone" data-parsley-trigger="change"></input>
                     <textarea required="" type="text" id="msg" name="user_message" placeholder="Message"></textarea>
                     <button id="form-submit"><a>Submit</a></button>
                 </fieldset>
